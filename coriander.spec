@@ -1,7 +1,7 @@
 #
 %define		_rc	rc4
-Summary:	
-Summary(pl.UTF-8):	
+Summary:	coriander
+Summary(pl.UTF-8):	coriander
 Name:		coriander
 Version:	2.0.0
 Release:	0.%{_rc}.1
