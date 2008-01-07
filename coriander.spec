@@ -1,7 +1,6 @@
-#
 %define		_rc	rc4
-Summary:	coriander
-Summary(pl.UTF-8):	coriander
+Summary:	Coriander - GUI for IEEE1394, IIDC/DCAM compliant digital cameras
+Summary(pl.UTF-8):	Coriander - GUI dla kamer cyfrowych zgodnych z IEEE1394 i IIDC/DCAM
 Name:		coriander
 Version:	2.0.0
 Release:	0.%{_rc}.1
@@ -24,21 +23,27 @@ BuildRequires:	xorg-lib-libXv-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Coriander is a full-featured GUI for IEEE1394, IIDC-compliant (aka
+DCAM) digital cameras. It includes camera control, video display,
+saving, FTP and V4L export.
 
 %description -l pl.UTF-8
+Coriander to w pełni funkcjonalny interfejs graficzny do kamer
+cyfrowych zgodnych z IEEE1394 i IIDC (DCAM). Obsługuje sterowanie
+kamerą, wyświetlanie obrazu, zapis i eksport FTP oraz V4L.
 
 %package devel
-Summary:	coriander header files
-Summary(pl.UTF-8):	Pliki nagłówkowe coriandera
+Summary:	Coriander header files
+Summary(pl.UTF-8):	Pliki nagłówkowe Coriandera
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libdc1394-devel
+Requires:	libdc1394-devel >= 2.0.0-0.rc5.1
 
 %description devel
-coriander header files.
+Coriander header files.
 
 %description devel -l pl.UTF-8
-Pliki nagłówkowe coriandera.
+Pliki nagłówkowe Coriandera.
 
 %prep
 %setup -q -n %{name}-%{version}-%{_rc}
