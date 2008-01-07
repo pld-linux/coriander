@@ -13,6 +13,7 @@ BuildRequires:	SDL-devel
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	ffmpeg-devel >= 0.4.9
+BuildRequires:	ftplib-devel
 BuildRequires:	libdc1394-devel >= 2.0.0-0.rc5.1
 BuildRequires:	libgnomeui-devel
 BuildRequires:	libraw1394-devel >= 1.2.0
